@@ -227,7 +227,27 @@ nav.primary-nav a.active {
   position: relative;
 }
 
-.hero-photo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.hero-photo-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+}
+
+.hero-photo-badge {
+  position: absolute;
+  right: -14px;
+  bottom: -14px;
+  width: 72px;
+  height: 72px;
+  padding: 7px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  object-fit: contain;
+}
 
 /* ---------- sections ---------- */
 
